@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.AppointmentFragment"
+    android:background="@color/colorBackground">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/appontment_recyclerview_id"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/floating_button_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="20dp"
+        android:padding="10dp"
+        android:src="@drawable/ic_add_new_appoint"
+
+        android:tint="#fff"
+        app:backgroundTint="#15a4d9"
+        app:fabSize="normal"
+        app:rippleColor="#fff" />
+
+</FrameLayout>

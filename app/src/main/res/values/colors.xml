@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#412865</color>
+    <color name="colorPrimaryDark">#412865</color>
+    <color name="colorAccent">#E7C0FB</color>
+
+    <color name="delete">#aa0808</color>
+    <color name="complete">#784aba</color>
+    <color name="edit">#cfc8c8</color>
+    <color name="call">#13d904</color>
+
+    <color name="colorText">#E7C0FB</color>
+    <color name="colorBackground">#341F50</color>
+    //colors for the bottomnav
+    <color name="colorItemNormal">#b0aeb1</color>
+    <color name="colorItemselected">#ffffff</color>
+
+    <color name="colorGrid">#412865</color>
+    <color name="colorgray">#d1d1d1</color>
+    <color name="colorHintText">#a293ab</color>
+</resources>

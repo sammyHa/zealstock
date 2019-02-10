@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+
+    <Button
+        android:id="@+id/btn_logout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign Out"
+        android:background="@drawable/drawable_button_border"
+        android:backgroundTint="@color/colorPrimary"
+        android:textColor="@color/colorText"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"
+
+        />
+</RelativeLayout>

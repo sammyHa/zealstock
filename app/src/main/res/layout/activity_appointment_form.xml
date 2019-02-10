@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorBackground"
+    android:id="@+id/parent_layout_appt_card_id">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/et_name_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/drawable_ettext_border"
+            android:padding="10dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="35dp"
+            android:layout_marginTop="26dp"
+            android:hint="Name"
+            android:inputType="textPersonName"
+            android:textColorHint="@color/colorHintText"
+            android:textColor="@color/colorText"/>
+
+        <TextView
+            android:id="@+id/et_date_id"
+            android:layout_width="155dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/et_name_id"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="35dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/drawable_ettext_border"
+            android:hint="Date"
+            android:textSize="18sp"
+            android:padding="10dp"
+            android:textColor="@color/colorText"
+            android:textColorHint="@color/colorHintText"
+            />
+
+        <EditText
+            android:id="@+id/et_time_id"
+            android:layout_width="165dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/et_name_id"
+            android:layout_marginLeft="-16dp"
+            android:layout_marginRight="35dp"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@id/et_date_id"
+            android:background="@drawable/drawable_ettext_border"
+            android:hint="Time"
+            android:inputType="time"
+            android:padding="10dp"
+            android:textColor="@color/colorText"
+            android:textColorHint="@color/colorHintText" />
+
+        <EditText
+            android:id="@+id/et_address_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/drawable_ettext_border"
+            android:layout_below="@id/et_date_id"
+            android:padding="10dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="35dp"
+            android:layout_marginTop="15dp"
+            android:hint="Address"
+            android:inputType="textPostalAddress"
+            android:textColorHint="@color/colorHintText"
+            android:textColor="@color/colorText"/>
+
+        <!-- Using an external library for the formatting -->
+        <com.santalu.maskedittext.MaskEditText
+            android:id="@+id/et_phoneNumber_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/drawable_ettext_border"
+            android:layout_below="@id/et_address_id"
+            android:padding="10dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="35dp"
+            android:layout_marginTop="15dp"
+            android:hint="Phone#"
+            android:inputType="phone"
+            app:met_mask="1(###) ### ####"
+            android:textColorHint="@color/colorHintText"
+            android:textColor="@color/colorText"/>
+
+        <EditText
+            android:id="@+id/et_form_iphone_model_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/drawable_ettext_border"
+            android:layout_below="@id/et_phoneNumber_id"
+            android:padding="10dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="35dp"
+            android:layout_marginTop="15dp"
+            android:hint="iPhone Model e.g 8+"
+            android:inputType="textAutoCorrect"
+            android:textColorHint="@color/colorHintText"
+            android:textColor="@color/colorText"/>
+
+        <EditText
+            android:id="@+id/et_form_iphone_color_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/drawable_ettext_border"
+            android:layout_below="@id/et_form_iphone_model_id"
+            android:padding="10dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="35dp"
+            android:layout_marginTop="15dp"
+            android:hint="iPhone Color e.g BLK"
+            android:inputType="textAutoCorrect"
+            android:textColorHint="@color/colorHintText"
+            android:textColor="@color/colorText"/>
+
+        <EditText
+            android:id="@+id/et_form_quantity_id"
+            android:layout_width="155dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/et_form_iphone_color_id"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="35dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/drawable_ettext_border"
+            android:hint="Quantity"
+            android:inputType="number"
+            android:padding="10dp"
+            android:textColor="@color/colorText"
+            android:textColorHint="@color/colorHintText" />
+
+        <EditText
+            android:id="@+id/et_form_price_id"
+            android:layout_width="165dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/et_form_iphone_color_id"
+            android:layout_marginLeft="-16dp"
+            android:layout_marginRight="35dp"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@+id/et_form_quantity_id"
+            android:background="@drawable/drawable_ettext_border"
+            android:hint="Price"
+            android:inputType="numberDecimal"
+            android:padding="10dp"
+            android:textColor="@color/colorText"
+            android:textColorHint="@color/colorHintText" />
+        <Button
+            android:id="@+id/btn_book_now_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_marginLeft="55dp"
+            android:layout_marginRight="55dp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/et_form_quantity_id"
+            android:background="@drawable/drawable_button_border"
+            android:text="Book Now"
+            android:textColor="@color/colorText"/>
+    </RelativeLayout>
+</ScrollView>
+
+    <EditText
+        android:id="@+id/etTotal"
+        android:layout_width="165dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="-16dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginTop="15dp"
+        android:visibility="invisible"
+        android:background="@drawable/drawable_ettext_border"
+        android:inputType="numberDecimal"
+        android:padding="10dp"
+        android:textColor="@color/colorText"
+        android:textColorHint="@color/colorHintText" />
+
+</RelativeLayout>

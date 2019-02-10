@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/parent_stock_form_id"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorBackground">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stocking"
+        android:textColor="@color/colorText"
+        android:textSize="20sp"
+        android:padding="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"/>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+    >
+
+        <EditText
+            android:id="@+id/st_iphone_model_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/drawable_ettext_border"
+            android:padding="10dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="35dp"
+            android:layout_marginTop="15dp"
+            android:hint="iPhone Model e.g iPhone x"
+            android:inputType="textAutoCorrect"
+            android:textColorHint="@color/colorHintText"
+            android:textColor="@color/colorText"/>
+
+        <EditText
+            android:id="@+id/st_iphone_color_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/drawable_ettext_border"
+            android:layout_below="@id/st_iphone_model_id"
+            android:padding="10dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="35dp"
+            android:layout_marginTop="15dp"
+            android:hint="iPhone Color e.g BLK"
+            android:inputType="textAutoCorrect"
+            android:textColorHint="@color/colorHintText"
+            android:textColor="@color/colorText"/>
+
+        <EditText
+            android:id="@+id/et_quantity_id"
+            android:layout_width="155dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/st_iphone_color_id"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="35dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/drawable_ettext_border"
+            android:hint="Quantity"
+            android:inputType="number"
+            android:padding="10dp"
+            android:textColor="@color/colorText"
+            android:textColorHint="@color/colorHintText" />
+
+        <EditText
+            android:id="@+id/st_price_id"
+            android:layout_width="165dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/st_iphone_color_id"
+            android:layout_marginLeft="-16dp"
+            android:layout_marginRight="35dp"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@+id/et_quantity_id"
+            android:background="@drawable/drawable_ettext_border"
+            android:hint="Price"
+            android:inputType="numberDecimal"
+            android:padding="10dp"
+            android:textColor="@color/colorText"
+            android:textColorHint="@color/colorHintText" />
+        <Button
+            android:id="@+id/btn_stock_now_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_marginLeft="55dp"
+            android:layout_marginRight="55dp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/et_quantity_id"
+            android:background="@drawable/drawable_button_border"
+            android:text="Stock Now"
+            android:textColor="@color/colorText"/>
+    </RelativeLayout>
+</ScrollView>
+
+</RelativeLayout>

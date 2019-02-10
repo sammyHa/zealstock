@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "150546007925",
+    "firebase_url": "https://zealstock-9467d.firebaseio.com",
+    "project_id": "zealstock-9467d",
+    "storage_bucket": "zealstock-9467d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:150546007925:android:4a7ac17eed168f7c",
+        "android_client_info": {
+          "package_name": "com.example.samim.bottomnavigationwithfragment"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "150546007925-tg97mv2tngthppdbtdp3uflg6efabjd2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.samim.bottomnavigationwithfragment",
+            "certificate_hash": "0e1608fd6ca7ab68920f57de24a5655442410939"
+          }
+        },
+        {
+          "client_id": "150546007925-3cg089gc02fu9i9prj5fbsm83dtk8pti.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDvABUigjk8v1xmEEZO25yPnZkSCZfCpL8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "150546007925-3cg089gc02fu9i9prj5fbsm83dtk8pti.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
